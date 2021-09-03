@@ -1,0 +1,18 @@
+{
+  "name": "kvrd",
+  "version": "0.0.1",
+  "description": "community tool to calculate reward distribution data and its merkle root and proofs on KyberDAO",
+  "main": "generateMerkleRoot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "keccak256": "1.0.2",
+    "mathjs": "4.4.2",
+    "ethers": "5.0.0",
+    "merkletreejs": "0.2.13",
+    "yargs": "16.0.3"
+  },
+  "author": "victor tran",
+  "license": "MIT"
+}
