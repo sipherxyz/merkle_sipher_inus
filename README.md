@@ -21,7 +21,7 @@ To better understand how the merkle tree plays its role in the Sipher sale, lets
 Looking at the sale flow, sharp readers will realize a few things:
 1. Everyone will be given their NFT ids even before the real NFTs are open. This is important for NFT holders because the NFT id is the essential part they will have to verify.
 2. Before `randomizedStartIndex` is randomly set, the mapping between `yourNFTIdInSipherServer` and `yourNFTId` is not established.
-3. The team will by 500 NFTs with Ids from 1 to 500. However, they can't control what's rare there because they don't know the mapping.
+3. The team will buy 500 NFTs with Ids from 1 to 500. However, they can't control what's rare there because they don't know the mapping.
 4. All of the NFT data are stored on Sipher servers except the NFT Ids, this comes with a trust assumption, NFT buyers trust Sipher servers to return **correct** data for the NFT they bought. It is very hard and costly to both achieve *true decentralization* and *flexibility* for a NFT game so the team chose a middle solution that buyers can verify the NFT data, noone can decline the verification result, and at the same time trust that the team will do their best to deliver the correct data. **How do buyers verify the NFT data?** The merkle tree comes in to facilitate such verifications.
 5. The merkle root is required to pushed before the sale can start, this means the team has to finalize the NFT data ***before the sale*** and they ***can't modify the data afterward***.
 
